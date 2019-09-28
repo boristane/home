@@ -27,4 +27,6 @@ for directory in ./*/ ; do
 done
 
 source ~/.bashrc
+su - ${USER}
+
 echo -e "${GREEN}ALL DONE"
