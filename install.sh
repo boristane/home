@@ -18,7 +18,7 @@ apt-get update
 
 for directory in ./*/ ; do
   cd ${directory}
-  for file in * ; do
+  for file in *.sh ; do
     echo ""
     echo -e "##### excecuting: ${file} #####"
     "./${file}"
@@ -26,7 +26,6 @@ for directory in ./*/ ; do
   cd $ROOTDIR
 done
 
-source ~/.bashrc
-su - ${USER}
+source ${HOME}/.bashrc
 
-echo -e "${GREEN}ALL DONE"
+echo -e "${GREEN}ALL DONE${NC}"

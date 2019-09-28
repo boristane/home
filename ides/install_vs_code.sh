@@ -7,8 +7,8 @@ bold=`tput bold`
 
 function install_vs_code() {
   echo "${green}${bold}Installing VS Code${reset}"
-  sudo snap install code --classic
-  echo "${green}${bold}Succesfully installed `/snap/bin/code -v`${reset}"
+  snap install code --classic
+  echo "${green}${bold}Succesfully installed VS Code `/snap/bin/code -v --user-data-dir .`${reset}"
 }
 
 function install_extensions () {
@@ -19,7 +19,11 @@ function install_extensions () {
     /snap/bin/code --install-extension ${extension} --user-data-dir .
   done
   echo "${bold}${green}Succesfully installed${reset}"
-  echo "${bold}${green}`/snap/bin/code --list-extensions --show-versions --user-data-dir .``"
+  echo "${bold}${green}`/snap/bin/code --list-extensions --show-versions --user-data-dir .`${reset}"
+  rm -rf logs || true
+  rm -rf User || true
+  rm machineid || true
 }
 
-install_utils
+install_vs_code
+install_extensions

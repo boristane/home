@@ -11,5 +11,5 @@ if [[ $EUID -eq 0 ]]; then
 	exit 1
 fi
 
-echo ${USER}
+chsh -s $(which zsh)
 su - ${USER}

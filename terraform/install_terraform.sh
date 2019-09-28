@@ -15,8 +15,8 @@ function install_terraform() {
   unzip /tmp/terraform.zip
   rm /tmp/terraform.zip
   # Add terraform path to .bashrc
-  if [[ -z $(grep 'export PATH=${HOME}/bin:${PATH}' ~/.bashrc) ]]; then
-    echo 'export PATH=${HOME}/bin:${PATH}' >> ~/.bashrc
+  if [[ -z $(grep 'export PATH=${HOME}/bin:${PATH}' ${HOME}/.bashrc) ]]; then
+    echo 'export PATH=${HOME}/bin:${PATH}' >> ${HOME}/.bashrc
   fi
 
   echo -e "${GREEN}Installed: `${HOME}/bin/terraform version`${NC}"

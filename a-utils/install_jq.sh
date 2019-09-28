@@ -2,7 +2,7 @@
 
 function install_jq() {
   echo "Installing jq"
-  snap install jq
+  snap install -y jq
   echo "jq `jq --version` i=succesfully installed"
 }
 
