@@ -6,7 +6,7 @@ reset=`tput sgr0`
 bold=`tput bold`
 
 function install_utils () {
-  utils=(curl apt-transport-https ca-certificates software-properties-common git)
+  utils=(curl apt-transport-https ca-certificates software-properties-common git python3-pip)
   for util in "${utils[@]}"; do
     echo ""
     echo "${bold}${green}Installing ${util}${reset}"
