@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -e
+
 function install_node() {
   echo "Installing node"
   curl -sL https://deb.nodesource.com/setup_10.x > /tmp/nodesource_setup.sh
