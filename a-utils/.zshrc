@@ -89,6 +89,8 @@ else
   export EDITOR='mvim'
 fi
 
+source $HOME/.aliases
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 

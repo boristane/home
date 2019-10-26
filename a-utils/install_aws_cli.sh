@@ -15,4 +15,10 @@ function install_aws_cli() {
   echo "${bold}${green}Succesfully Installed `${HOME}/.local/bin/aws --version`${reset}"
 }
 
+function install_awslogs() {
+  echo "${bold}${green}Installing awslogs${reset}"
+  pip3 install awslogs
+}
+
 install_aws_cli
+install_awslogs

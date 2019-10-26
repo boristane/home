@@ -39,6 +39,7 @@ function install_spaceship() {
   ln -s "${HOME}/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme" "${HOME}/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
   ln -s "${HOME}/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme" "${HOME}/.oh-my-zsh/themes/spaceship.zsh-theme"
   cp ${CURRENT_DIR}/.zshrc ${HOME}/.zshrc
+  cp ${CURRENT_DIR}/.aliases ${HOME}/.aliases
   echo "${green}${bold}Succesfully installed spaceship prompt${reset}"
 }
 
