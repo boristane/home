@@ -17,6 +17,8 @@ function install_terminator() {
 function install_zsh() {
   echo "${green}${bold}Installing zsh${reset}"
   apt install -y zsh
+  # Prevents zsh terminals to share a common history when pressing the up and down buttons
+  setopt no_share_history
   echo "${green}${bold}Succesfully installed `zsh --version`${reset}"
 }
 
