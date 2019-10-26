@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 
 red=`tput setaf 1`
 green=`tput setaf 2`
